@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/265b499352.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div><img class="bild" src="bild.png" alt="my bild " /></div>
+      <nav>
+        <span class="navbar"></span>
+        <a href="#">Home</a>
+        <a>About</a>
+        <a>Sök</a>
+        <a>Contact</a>
+
+        <i class="fa-solid fa-bars"></i>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div>
+        <h3>Kontakta oss</h3>
+        <p>
+          Ring oss på 0771-55-8500 eller fyll i kontaktformuläret.<br />
+          Vi kommer att svara dig via e-post.<br />
+          Vi återkommer senast nästkommande vardag.
+        </p>
+
+        <div class="formContainer">
+          <form action="https://httpbin.org/anything" method="post">
+            <div class="firstName">
+              <label for="firstName">* First och Last Name</label>
+              <input id="firstName" name="firstName" type="text" required />
+            </div>
+
+            <div class="e-postadress">
+              <label for="e-postadress">* Fill i din e-postadress</label>
+              <input
+                id="e-postadress"
+                name="e-postadress"
+                type="text"
+                required
+              />
+            </div>
+            <div class="ort">
+              <label for="ort">Ort</label>
+              <input id="ort" name="ort" type="ort" required />
+            </div>
+            <div class="telefonnummer">
+              <label for="telefonnummer">* Telefonnummer</label>
+              <input
+                id="telefonnummer"
+                name="telefonnummer"
+                type="tel"
+                required
+              />
+            </div>
+            <div class="söderort">
+              <div>
+                <p>Har du ett registrerat bolag?</p>
+                <div class="bolag">
+                  <input
+                    type="radio"
+                    value="fråga1"
+                    name="fråga1"
+                    id="fråga1"
+                  />
+                  <label for="fråga1">Ja, jag har ett registerat bolag</label>
+                </div>
+
+                <input type="radio" value="fråga2" name="fråga2" id="fråga2" />
+                <label for="fråga2">Nej, jag har ingen registerat bolag</label>
+              </div>
+
+              <div><p>Vad handlar ditt ärende om?</p></div>
+
+              <div>
+                <input type="radio" value="fråga3" name="fråga3" id="fråga3" />
+                <label for="fråga3">Finansiering</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  value="fråga"
+                  name="fråga"
+                  id="fråga"
+                /><label for="fråga4">Affärsutveckling</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  value="fråga"
+                  name="fråga"
+                  id="fråga"
+                /><label for="fråga5">Riskkapital</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  value="fråga"
+                  name="fråga"
+                  id="fråga"
+                /><label for="fråga6">Övrigt</label>
+              </div>
+            </div>
+            <div class="message">
+              <label for="message">Beskriv ditt ärende</label>
+              <textarea id="msg" name="message"></textarea>
+            </div>
+            <div class="ort">
+              <div class="samtycker">
+                <input
+                  type="radio"
+                  value="fråga"
+                  name="fråga"
+                  id="fråga"
+                /><label for="fråga7"
+                  >Ja, jag samtycker till att Almi får spara mina
+                  uppgifter.</label
+                >
+              </div>
+            </div>
+            <div class="send">
+              <button type="submit">Skicka</button>
+            </div>
+
+            <div class="send"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(206, 204, 204);
+  padding: 20px;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+nav i {
+  margin: 10px;
+  color: blue;
+}
+.navbar {
+  display: none;
+}
+@media (min-width: 20px) {
+  .navbar {
+    display: flex;
+  }
+  .fa-solid {
+    display: none;
+  }
+}
+.bild {
+  width: 100px;
+  height: auto;
+  min-width: 20px;
+  margin-left: auto;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.formContainer form {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 30px;
+}
+
+.container {
+  display: grid;
+  background-color: rgb(220, 126, 223);
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: center;
+}
+
+h3 {
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+p {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.send {
+  grid-column: 1;
+}
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+
+  border: 1px solid gray;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+input[type="radio"] {
+  width: auto;
+}
+
+.bolag {
+  display: flex;
+}
+
+.samtycker {
+  display: flex;
+}
+
+select {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+textarea {
+  height: 200px;
+}
+.message {
+  grid-column: span 2;
+}
